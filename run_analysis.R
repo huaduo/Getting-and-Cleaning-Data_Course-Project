@@ -174,7 +174,7 @@ levels(tidydata$activitySymbol)
 
 str(tidydata)
 
-write.table(tidydatatwo,"./tidydata.txt",quote = FALSE,row.name=FALSE)
+write.table(tidydata,"./tidydata.txt",quote = FALSE,row.name=FALSE)
 
 
 aa<-tidydata[,!(names(tidydata) %in% "activitySymbol")]
