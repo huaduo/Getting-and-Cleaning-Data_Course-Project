@@ -174,6 +174,7 @@ levels(tidydata$activitySymbol)
 
 str(tidydata)
 
+write.table(tidydatatwo,"./tidydata.txt",quote = FALSE,row.name=FALSE)
 
 
 aa<-tidydata[,!(names(tidydata) %in% "activitySymbol")]
@@ -186,5 +187,5 @@ tidydatatwo<-summarise(group_by(melted,SubjectID,activityLabel,variable),mean=me
 
 head(tidydatatwo)
 
-write.table(tidydatatwo,"C:/JingLi/Learning material/R/Getting and cleaning data/project/tidydatatwo.txt",quote = FALSE,row.name=FALSE)
+write.table(tidydatatwo,"./tidydatatwo.txt",quote = FALSE,row.name=FALSE)
 
