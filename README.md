@@ -9,7 +9,7 @@
 train<-read.table("./train/X_train.txt")
 
 dim(train)
-## [1] 7352  561
+##[1] 7352  561
 
 test<-read.table("./test/X_test.txt")
 
@@ -330,6 +330,10 @@ levels(tidydata$activitySymbol)
 
 #Check the structure of the tidy dataset 
 str(tidydata)
+
+#Write the first tidy dataset to a txt data file
+write.table(tidydata,"./tidydata.txt",quote = FALSE,row.name=FALSE)
+
 
 
 # From the data set in step 4, creates a second, independent tidy data set 
